@@ -9,13 +9,13 @@ import json
 color_grey = st.color_picker('Pick A Color', '#2d2d2d')
 st.write('The current color is', color_grey)
 
-df = pd.read_csv(r"C:\Python\Acordes\Notas Violão - Página1.csv")
+df = pd.read_csv(r"https://github.com/AlexMontenegro98/acorde/blob/main/Notas Violão - Página1.csv")
 notes = ['Do','Do#','Re','Re#','Mi','Fa','Fa#','Sol','Sol#','La','La#','Si']
 eadgbe = ['Mi','Si','Sol','Re','La','Mi']
 chord_C = [0,1,0,2,3,0]
 chords = {'C':[0,1,0,2,3,7], 'D':[2,3,2,0,7,7]}
 
-filee = json.load(open(r'C:\Python\Acordes\chords.json'))
+filee = json.load(open(r'https://github.com/AlexMontenegro98/acorde/blob/main/chords.json'))
 chords = filee['chords']
 
 chord_name = st.radio("What\'s the chord?", chords)
